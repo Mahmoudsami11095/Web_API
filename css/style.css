@@ -1,0 +1,335 @@
+/* Weather App Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262936;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.weather-container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.main-header {
+    background: #1e202b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.logo-icon {
+    font-size: 2.2rem;
+    color: #00c3ff;
+}
+
+.logo-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo-tagline {
+    font-size: 0.8rem;
+    color: #bfc1c8;
+    font-weight: 400;
+}
+
+.main-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover {
+    background: #22243a;
+    color: #00c3ff;
+    border: 1px solid #00c3ff;
+}
+
+.hero-section {
+    background-color: black;
+    background-image: url('images/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 420px;
+    padding-bottom: 60px;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.search-bar {
+    background: #22243a;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.search-bar::placeholder {
+    color: #bfc1c8;
+    opacity: 1;
+}
+
+.find-btn {
+    background: #009ad8;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-width: 120px;
+    box-shadow: 0 4px 16px rgba(0,194,255,0.15);
+    margin-left: -5px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-btn:hover {
+    background: #00c3ff;
+}
+
+.weather-cards {
+    margin-top: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.weather-card {
+    background: #323544;
+    border-radius: 12px;
+    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 0;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.weather-card.today {
+    background: #262936;
+    color: #fff;
+}
+
+.weather-card .day {
+    color: #bfc1c8;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.weather-card .date {
+    color: #bfc1c8;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.weather-card .city {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.weather-card .temp {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    color: #fff;
+}
+
+.weather-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.weather-card .desc {
+    color: #00c3ff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.weather-card .details {
+    display: flex;
+    gap: 1.5rem;
+    color: #bfc1c8;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.weather-card .details i {
+    margin-right: 0.3rem;
+    color: #009ad8;
+}
+
+.main-footer {
+    background: #262936;
+    color: #bfc1c8;
+    border-top: 1px solid #22243a;
+}
+
+.subscribe-form {
+    background: #1e202b;
+    border-radius: 30px;
+    padding: 0.3rem 0.5rem;
+    max-width: 420px;
+}
+
+.subscribe-input {
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
+}
+
+.subscribe-btn {
+    background: #009ad8;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 0.6rem 2rem;
+    transition: background 0.2s;
+}
+
+.subscribe-btn:hover {
+    background: #00c3ff;
+}
+
+.footer-social a {
+    color: #009ad8;
+    background: #1e202b;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footer-social a:hover {
+    background: #009ad8;
+    color: #fff;
+}
+
+.footer-copy {
+    font-size: 0.95rem;
+    color: #bfc1c8;
+}
+
+@media (max-width: 991px) {
+    .weather-card {
+        min-height: 320px;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+    .search-bar {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .find-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header .container, .main-footer .container, .hero-section .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .weather-cards {
+        flex-direction: column;
+    }
+    .weather-card {
+        min-height: 220px;
+        margin-bottom: 1.2rem;
+    }
+    .search-bar-wrapper {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .search-bar, .find-btn {
+        border-radius: 40px !important;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .find-btn {
+        margin-left: 0;
+        height: 50px;
+    }
+    .search-bar {
+        height: 50px;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.current-weather-card,
+.forecast-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
