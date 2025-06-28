@@ -1,6 +1,6 @@
 // Weather App JavaScript
 const API_KEY = 'e59a563b5fed44908cb183249252406';
-const BASE_URL = 'http://api.weatherapi.com/v1';
+const BASE_URL = 'https://api.weatherapi.com/v1';
 
 // Initialize the app
 function initWeatherApp() {
